@@ -12,7 +12,7 @@ block TreeDataExtractor oftype CSVExtractor {
 
 // "baumart_deutsch" column löschen
 block BaumTypeColumnRemover oftype ColumnDeleter {
-    delete: ["baumart_deutsch"];   
+    delete: [column E];   
 }
 
 block TreeDataInterpreter oftype TableInterpreter {
