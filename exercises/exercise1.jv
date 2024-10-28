@@ -5,7 +5,6 @@ pipeline AutomatedAirportsDataPipeline {
         -> AirportInterpreterCSV
         -> AirportsTableInterpreter
         -> AirportsLoaderSQL;
-   
 }
 
 // Block Definitions
