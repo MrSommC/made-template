@@ -25,8 +25,8 @@ covering attributes such as turbine capacity, hub height, rotor diameter, instal
 Updated quarterly, it reflects up to date information on wind energy infrastructure and includes verification ratings for location and turbine characteristics. 
 This dataset will be used to analyze state-level trends in wind energy adoption and identify leading states
 **Data Type**: Zip -> CSV
-**License**: 
- "Map services and data are available from U.S. Wind Turbine Database, provided by the U.S. Geological Survey, American Clean Power Association, and Lawrence Berkeley National Laboratory via https://eerscmap.usgs.gov/uswtdb".
+
+**License**:"Map services and data are available from U.S. Wind Turbine Database, provided by the U.S. Geological Survey, American Clean Power Association, and Lawrence Berkeley National Laboratory via https://eerscmap.usgs.gov/uswtdb".
  from the source: "U.S. Wind Turbine Database are free and in the public domain [t]here are no restrictions[...]".
 
 ## Dataset 2 ##
