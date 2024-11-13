@@ -24,6 +24,7 @@ potentially guiding future policies and investments in renewable energy infrastr
 covering attributes such as turbine capacity, hub height, rotor diameter, installation year, and manufacturer. 
 Updated quarterly, it reflects up to date information on wind energy infrastructure and includes verification ratings for location and turbine characteristics. 
 This dataset will be used to analyze state-level trends in wind energy adoption and identify leading states
+
 **Data Type**: Zip -> CSV
 
 **License**:"Map services and data are available from U.S. Wind Turbine Database, provided by the U.S. Geological Survey, American Clean Power Association, and Lawrence Berkeley National Laboratory via https://eerscmap.usgs.gov/uswtdb".
@@ -32,7 +33,8 @@ This dataset will be used to analyze state-level trends in wind energy adoption 
 ## Dataset 2 ##
 **Title**: ACS 5YR Socioeconomic Estimate Data by State 
 **Source**: [https://hudgis-hud.opendata.arcgis.com/datasets/7d6504755b604e02afea342ac9cf748f/about](https://hudgis-hud.opendata.arcgis.com/datasets/7d6504755b604e02afea342ac9cf748f/about)  
-**Description**: The 2016-2020 ACS 5-Year estimates provide comprehensive socioeconomic data compiled at the state level, covering a range of characteristics like income, employment, and poverty. Key metrics include household income distribution, median earnings by education level, poverty rates by family and living arrangements, and workforce participation segmented by age and occupation. This dataset offers valuable insights into the economic and demographic composition of the U.S., making it suitable for analyzing regional socioeconomic trends and their potential impact on renewable energy adoption and other state-level initiatives
+**Description**: The 2016-2020 ACS 5-Year estimates provide comprehensive socioeconomic data compiled at the state level, covering a range of characteristics like income, employment, and poverty. Key metrics include household income distribution, median earnings by education level, poverty rates by family and living arrangements, and workforce participation segmented by age and occupation. This dataset offers valuable insights into the economic and demographic composition of the U.S., making it suitable for analyzing regional socioeconomic trends and their potential impact on renewable energy adoption and other state-level initiatives.
+
 **Data Type**: Zip -> CSV
 
 
