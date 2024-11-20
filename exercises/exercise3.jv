@@ -1,0 +1,83 @@
+pipeline WorldBankDataPipeline {
+
+    DataExtractorWorldBank
+        -> AgencyXLSXInterpreter
+        -> AgencySheetPicker
+        -> HeaderNameChange 
+        -> SelectRelevantCells
+        -> BondTable
+        -> TableLoader;
+    SelectRelevantCells
+        -> InterpretGDPTable
+        -> LoadGDPTable;
+
+    block DataExtractorWorldBank oftype HttpExtractor {
+        url: "https://thedocs.worldbank.org/en/doc/7d852628d96b9411d43e5d36d5dff941-0050062022/original/Graphs-Chapter-5-02082022.xlsx";
+    }
+
+    block AgencyXLSXInterpreter oftype XLSXInterpreter { }
+
+    block AgencySheetPicker oftype SheetPicker {
+        sheetName: "Figure S5.1.2";
+    }
+
+    block HeaderNameChange oftype CellWriter {
+        at: range P2:S2;
+        write: [
+            "Country Code",
+            "Economy",
+            "GDP per Capita",
+            "Bond Issuance Share",
+        ];
+    }
+
+    block SelectRelevantCells oftype CellRangeSelector {
+        select: range P2:S45;
+    }    
+
+    block BondTable oftype TableInterpreter {
+        header: true;
+        columns: [
+            "Country Code" oftype CountryCode,
+            "Bond Issuance Share" oftype BondIssuanceShare,        
+        ];
+    }
+
+    block TableLoader oftype SQLiteLoader {
+        table: "bondIssuance";
+        file: "country-stats.sqlite";
+        dropTable: true;            
+    }
+
+    block InterpretGDPTable oftype TableInterpreter {
+        header: true;
+        columns: [
+            "Country Code" oftype CountryCode,
+            "GDP per Capita" oftype GDPPerCapita,
+        ];
+    }
+
+    block LoadGDPTable oftype SQLiteLoader {
+        table: "gdpPerCapita";
+        file: "country-stats.sqlite";
+        dropTable: true;            
+    }
+
+    valuetype CountryCode oftype text {
+        constraints: [];
+    }
+
+    valuetype GDPPerCapita oftype decimal {
+        constraints: [Positive];
+    }
+
+    valuetype BondIssuanceShare oftype decimal {
+        constraints: [BetweenZeroAndOne];
+    }
+
+    constraint BetweenZeroAndOne on decimal:
+        value >= 0 and value <= 1;
+
+    constraint Positive on decimal:
+        value > 0;
+}
