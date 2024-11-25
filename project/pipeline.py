@@ -21,7 +21,6 @@ class DataPipeline:
         data_retriever.download_api_data(datasets["socioeconomic_data"], "socioeconomic_data.csv")
 
     def preprocess_data(self):
-        # Use the DataPreprocessor for all preprocessing steps
         preprocessor = DataPreprocessor(self.data_dir)
         preprocessor.preprocess_all()
 
