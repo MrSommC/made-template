@@ -2,12 +2,11 @@
  
 ## Project Title
 
-Adoption of Wind Energy Technology in the United States
+Do socioeconomic factors correlate with wind energy adoption in the United States?
 
 ## Main Question
 
-Which states in the United States are leading in wind energy adoption, and what factors contribute to this?
-
+Do favorable socioeconomic conditions correlate with higher wind turbine adoption in the United States?
 ## Description
 
 This project will analyze the adoption rates of wind energy across different states in the United States. 
