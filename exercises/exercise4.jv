@@ -68,13 +68,13 @@ pipeline Exercise4Pipeline {
     block TemperatureTransformer oftype TableTransformer {
         inputColumns: ["temperature"];
         outputColumn: "temperature";
-        use: CelsiusToFahrenheit;
+        uses: CelsiusToFahrenheit;
     }
 
     block BatteryTemperatureTransformer oftype TableTransformer {
         inputColumns: ["battery_temperature"];
         outputColumn: "battery_temperature";
-        use: CelsiusToFahrenheit;
+        uses: CelsiusToFahrenheit;
     }
 
     block DataSaver oftype SQLiteLoader { 
