@@ -6,8 +6,10 @@ from preprocessor import DataPreprocessor
 
 class DataPipeline:
     def __init__(self, db_name: str):
-        self.data_dir = "/Users/christophsommermann/Documents/made-template/data"
+        # Use a dynamic base directory, defaulting to your local data directory
+        self.data_dir = os.getenv("DATA_DIR", "/Users/christophsommermann/Documents/made-template/data")
         self.db_path = os.path.join(self.data_dir, db_name + ".sqlite")
+        os.makedirs(self.data_dir, exist_ok=True)  # Ensure the directory exists
         self.engine = create_engine(f"sqlite:///{self.db_path}", echo=False)
 
     def download_data(self):
