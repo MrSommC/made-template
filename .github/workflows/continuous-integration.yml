@@ -24,9 +24,9 @@ jobs:
         pip install -r project/requirements.txt
 
     - name: Set permissions for test script
-      run: chmod +x tests.sh
+      run: chmod +x project/tests.sh
 
     - name: Run pipeline tests
       env:
         MOCK_DOWNLOAD: "true"  
-      run: bash ./tests.sh
+      run: bash project/tests.sh
