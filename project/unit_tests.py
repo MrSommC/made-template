@@ -7,7 +7,7 @@ from pipeline import DataPipeline
 class TestDataPipelineSystem(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.data_dir = "/Users/christophsommermann/Documents/made-template/data"
+        cls.data_dir = os.getenv("DATA_DIR", "/Users/christophsommermann/Documents/made-template/data")
         cls.db_name = "test_renewable_energy_data"
         cls.db_path = os.path.join(cls.data_dir, cls.db_name + ".sqlite")
         cls.pipeline = DataPipeline(db_name=cls.db_name)
