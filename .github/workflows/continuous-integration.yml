@@ -28,5 +28,6 @@ jobs:
 
     - name: Run pipeline tests
       env:
-        MOCK_DOWNLOAD: "true"  
+        MOCK_DOWNLOAD: "true"
+        DATA_DIR: "${{ github.workspace }}/data"
       run: bash project/tests.sh
