@@ -36,7 +36,8 @@ A geographical map highlighting the US states with the highest number of wind tu
 
 3.  Top 10 States by Poverty, Income Ranking and College Education
 
-<img src="https://github.com/user-attachments/assets/1eb3c403-fcfd-4e94-a950-fad710368e11" alt="Top 10 States by Poverty, Income Ranking and College Education" width="380"/>
+<img src="https://github.com/user-attachments/assets/1eb3c403-fcfd-4e94-a950-fad710368e11" alt="Top 10 States by Poverty, Income Ranking and College Education" width="420"/>
+
 
 Three bar charts comparing US states based on poverty, median income, and bachelor's degree attainment to identify states with the most favorable socioeconomic conditions.
 
