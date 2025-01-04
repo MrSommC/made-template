@@ -48,7 +48,7 @@ A Venn diagram showing the overlap of states excelling in poverty, income, and e
 
 5. Correlation Matrix: Socio-Economic Factors vs. Wind Turbines Per State
 
-<img src="https://github.com/user-attachments/assets/353d43de-eaa7-42e1-9816-644190575416" alt="Correlation Matrix: Socio-Economic Factors vs. Wind Turbines Per State" width="420"/>
+<img src="https://github.com/user-attachments/assets/093d95a5-b76f-4179-ad47-a3b1a31d4172" alt="Correlation Matrix: Socio-Economic Factors vs. Wind Turbines Per State" width="400"/>
 
 A correlation matrix comparing states with high wind turbine adoption to those with favorable socioeconomic factors, identifying overlaps and relationships.
 
